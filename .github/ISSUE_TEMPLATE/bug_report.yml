@@ -3,6 +3,10 @@ description: Create a report to help us improve
 title: " "
 labels: ["Type: Bug", "Needs: Triage", "Needs: Lead"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Enter Bug Report Details
   - type: textarea
     id: description
     attributes:
@@ -23,7 +27,7 @@ body:
         2. Do ...
     validations:
       required: true
-      
+
   - type: textarea
     id: behavior
     attributes:
