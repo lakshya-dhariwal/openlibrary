@@ -23,6 +23,7 @@ body:
         2. Do ...
     validations:
       required: true
+      
   - type: textarea
     id: behavior
     attributes:
