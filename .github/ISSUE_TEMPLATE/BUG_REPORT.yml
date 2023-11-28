@@ -1,7 +1,7 @@
 name: "Bug Report"
 description: Create a report to help us improve
 title: " "
-labels: ["Type: Bug", "Needs: Triage", "Needs: Lead"]
+labels: ["Type: Bug", "Needs: Triage", "Needs: Lead"]pahndishiki
 body:
   - type: markdown
     attributes:
