@@ -1,0 +1,85 @@
+name: "Bug Report"
+description: Create a report to help us improve
+title: " "
+labels: ["Type: Bug", "Needs: Triage", "Needs: Lead"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        What problem are we solving? What does the experience look like today?
+        What are the symptoms?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: What steps caused you to find the bug?
+      placeholder: ...
+      value: |-
+        1. Go to ...
+        2. Do ...
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Behavior
+      description: " What actually happened after these steps? What did you expect to happen?"
+      value: |-
+        * Actual:
+        * Expected:
+  - type: textarea
+    id: proposals
+    attributes:
+      label: Proposal & Constraints
+      description: >-
+        What is the proposed solution / implementation? Is there a precedent of
+        this approach succeeding elsewhere?
+  - type: input
+    id: related
+    attributes:
+      label: Related files
+      description: >-
+        Files related to this issue; this is super useful for new contributors
+        who might want to help! If you're not sure, leave this blank; a
+        maintainer will add them.
+  - type: checkboxes
+    attributes:
+      label: Logged In?
+      options:
+        - label: "Yes"
+          required: false
+        - label: "No"
+          required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser type/version
+  - type: input
+    id: os
+    attributes:
+      label: Operating system?
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: If not sure, put prod
+      options:
+        - prod
+        - dev
+        - local
+  - type: input
+    id: stakeholders
+    attributes:
+      label: Stakeholders
+      placeholder: "@ tag stakeholders of this bug"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
