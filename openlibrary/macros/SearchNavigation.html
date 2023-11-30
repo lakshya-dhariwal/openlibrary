@@ -27,4 +27,8 @@ $ q = query_param("q", "")
     <a data-ol-link-track="SearchNav|SearchAdvanced"
        href="/advancedsearch">$_("Advanced Search")</a>
   </li>
+  <li class="$('selected' if ctx.path=='/bulk' else '')">
+    <a data-ol-link-track="SearchNav|SearchBulk"
+       href="/search/bulk">$_("Bulk Search")</a>
+  </li>
 </ul>

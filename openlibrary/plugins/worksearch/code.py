@@ -517,6 +517,12 @@ class advancedsearch(delegate.page):
 
     def GET(self):
         return render_template("search/advancedsearch.html")
+    
+class bulksearch(delegate.page):
+    path = "/search/bulk"
+
+    def GET(self):
+        return render_template("search/bulk.html")
 
 
 class list_search(delegate.page):
